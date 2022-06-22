@@ -9,6 +9,8 @@ body {
     padding: 1rem;
     border-left: 1px solid #333;
     border-right: 1px solid #333;
+    background: rgba(210, 228, 247, 1);
+
 }
 
 th, td, caption {
@@ -16,4 +18,15 @@ th, td, caption {
     font-family: 'Courier New', Courier, monospace;
     border-collapse: separate;
     padding: 0.5rem;
+}
+
+
+
+.title {
+
+    color: rgb(240, 122, 79);
+}
+
+.subtitle {
+    color:rgb(242, 152, 119);
 }
