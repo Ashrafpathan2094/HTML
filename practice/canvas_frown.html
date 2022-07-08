@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Canvas </title>
+        <meta name="description" content="Canvas practice">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <center><canvas id="can" width="500" height="700" style="border: 3px solid rgb(210, 179, 147);">
+
+        </canvas></center>
+        <script>
+
+            var a =document.getElementById("can");
+            var b=a.getContext("2d");
+
+            //face outline
+            b.beginPath();
+            b.arc(250,350,200,0,2*Math.PI);
+            b.fillStyle="Yellow";
+            b.fill();
+            b.closePath();
+
+            //right eye
+            b.beginPath();
+            b.fillStyle="White";
+            b.arc(175,270,20,0,2*Math.PI);
+            b.fill();
+            b.closePath();
+
+            b.beginPath();
+            b.fillStyle="black";
+            b.arc(175,270,13,0,2*Math.PI);
+            b.fill();
+            b.closePath();
+
+            //left eye
+            b.beginPath();
+            b.fillStyle="White";
+            b.arc(320,270,20,0,2*Math.PI);
+            b.fill();
+            b.closePath();
+
+            b.beginPath();
+            b.fillStyle="black";
+            b.arc(320,270,13,0,2*Math.PI);
+            b.fill();
+            b.closePath();
+
+            //smile
+            b.beginPath();
+            b.arc(250,450,100,0,Math.PI,true);
+            b.stroke();
+
+            b.closePath();
+
+
+
+
+            
+            
+
+            b.strokeStyle="blue";
+            
+
+
+        </script>
+    </body>
+</html>
