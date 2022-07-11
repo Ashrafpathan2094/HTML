@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <canvas id ="my" width="300" height="400" style="border: 3px solid black;"></canvas>
+
+        <script>
+            a = document.getElementById("my");
+            b= a.getContext("2d");
+//            b.fillstyle="red";
+//            b.font="30px arial";
+//            b.strokeText("Ashraf",25,25);
+//            b.fillText("Ashraf",25,125);
+
+            var c = b.createLinearGradient(0,0,300,400);
+            c.addColorStop(0,"red");
+            c.addColorStop(0.3,"purple");
+            c.addColorStop(0.5,"blue");
+            c.addColorStop(0.8,"green");
+            c.addColorStop(1,"pink");
+
+
+            b.fillStyle=c;
+            //b.fillRect(10,10,250,350);
+            b.arc(150,200,100,0,2*Math.PI);
+            b.fill();
+
+
+
+
+        </script>
+    </body>
+</html>
