@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+
+        <canvas id="mycanvas" width="700" height="500" style="border: 2px solid red;"></canvas>
+
+        <script>
+            var a = document.getElementById("mycanvas");
+            var b = a.getContext("2d");
+             
+        // For Gradient
+        var c=b.createLinearGradient(0,0,700,0);
+        c.addColorStop(0, "blue");
+        c.addColorStop(1, "yellow");
+
+        // Fill with Gradient
+        b.fillStyle =c;
+        b.fillRect(100,100,300,200);
+        </script>
+</body>
+</html>
