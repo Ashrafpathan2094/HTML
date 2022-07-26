@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Animation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+
+        <style>
+
+            body{
+
+                background-color:black;
+            }
+            @keyframes bottom-top{
+                from{
+                    transform:translateY(100%);
+                  
+                          }
+                to{
+                    transform:translateY(0%);
+                        }            
+                    }
+                 
+
+
+            @keyframes to-bottom{
+                from{
+                    transform:translateY(0%);
+                    
+                            }
+                to{
+                    transform:translateY(100%);
+                        }            
+                    }
+
+            @keyframes left-right{
+                from{
+                    transform:translateX(250%);
+                    opacity: 0.25;
+                    
+                            }
+                to{
+                    transform:translateX(0%);
+                    opacity: 1;
+                        }            
+                    }
+
+            .emoji{
+                animation: left-right 2s;
+                animation-delay: 500ms;
+                animation-iteration-count:infinite;
+                animation-fill-mode:backwards;
+                line-height: 200px;
+                
+            }
+        
+                         
+
+
+            .hey{
+                animation: bottom-top 2s;
+                animation-delay: 500ms;
+                animation-iteration-count:infinite;
+                animation-fill-mode:backwards;
+                line-height: 200px;
+                background-color:cornflowerblue;
+                color:greenyellow;
+                
+            }
+
+            
+            .how{
+                animation: bottom-top 500ms;
+                animation-delay: 500ms;
+                animation-iteration-count:infinite;
+                animation-fill-mode:backwards;
+                line-height: 200px;
+                background-color:hotpink;
+                color:indigo;
+                
+            }
+                        
+            .hello{
+                animation: bottom-top 1s;
+                animation-delay: 1000ms;
+                animation-iteration-count:infinite;
+                animation-fill-mode:backwards;
+                line-height: 200px;
+                background-color:teal;
+                color:lemonchiffon;
+                
+            }
+
+            .asd{
+                animation: to-bottom 2s;
+                animation-delay: 500ms;
+                animation-iteration-count:infinite;
+                animation-fill-mode:both;
+                line-height: 200px;
+                background-color:lime;
+                color:black;
+                
+            }
+
+
+            section{
+                display:flex ; 
+                margin-left:400px;
+            }
+
+
+            .hey,.how,.hello,.asd{
+                width:200px;
+                height:200px;
+                text-align:center;
+                border-radius:200px;
+                font-family: 'Roboto Mono', monospace;
+                font-weight:900;
+                font-size: 25px;
+                   
+            }
+
+            
+
+
+
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">
+                upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <img src="https://cdn.pixabay.com/photo/2016/09/10/14/54/emoticon-1659233_960_720.png" alt="emoji"
+         width="400px" height="300px" class="emoji">
+        <section id="sec">
+            <div class="hey">hey</div>
+            <div class="how">how are you?</div>
+            <div class="hello">hello, world!</div><br>
+        </section>
+
+        <section style="margin-top:200px;">
+            <div class="asd">ASD</div>
+        </section>
+
+
+        
+        
+            
+            
+            
+        
+    </body>
+</html>
