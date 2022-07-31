@@ -22,6 +22,8 @@
 
                 background-color: slateblue;
                 }
+
+
             #card{
                 margin-left:400px;
                 margin-top:200px;
@@ -32,7 +34,8 @@
                 height:300px;
                 background-image: url("https://cdn.pixabay.com/photo/2015/12/06/20/10/christmas-bauble-1079926_960_720.jpg  ");
                 background-size:cover;
-                overflow:auto;                  
+                overflow:auto;  
+                transition: transform 1s;                
                     }
 
             .text{
@@ -49,6 +52,7 @@
             #birthday:hover{
 
                 color:purple;
+                
             }
             #birthday{
 
@@ -72,6 +76,40 @@
 
                 background-color:hotpink;
             }
+
+
+
+            @keyframes color-change {
+                0%{color:deeppink;}
+                25%{color:deepskyblue;}
+                50%{color:darkred;}
+                75%{color:yellowgreen;}
+                100%{color:deeppink;}
+            }
+
+            @keyframes trans{
+                0%{transform:translate(400px,100px)scale(2)rotate(360deg);}
+                100%{transform:translate(0px,0px)scale(1)rotate(0deg);}
+                
+                }
+
+            #card{
+   
+                animation:trans 1.5s ease-in-out 1;	
+            }
+            #birthday{
+
+                animation:color-change 5s ease-in infinite;
+            }
+
+
+
+            #card:hover{
+                
+                transform:scale(1.5);
+            }
+            
+            
 
     
             
@@ -103,7 +141,7 @@
                 <span id="birthday" class="text">Birthday</span><br>
 
                 <span id="to" class="text">TO YOU</span><br>
-                <span id="zubu" class="text">Zubair</span>
+                <span id="zubu" class="text">Ashraf</span>
 
                 <br><br><br>
 
