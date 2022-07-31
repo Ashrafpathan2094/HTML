@@ -12,11 +12,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
         <style>
 
             body{
                 margin:0px;
+                font-family: 'Lora', serif
+               
+            }
+
+            h1{
+                color:rgb(14, 204, 14);
+                font-size:40px;
             }
 
             .upper-box{
@@ -65,13 +72,12 @@
             }
 
             .navbar a{
-                text-decoration:none;font-family: 'Lato', sans-serif;
                 padding:20px;
             }
 
             .navbar a:hover{
 
-                color:red;
+                color:white;
                 background-color:lightblue;
             }
 
@@ -80,21 +86,49 @@
 
                 text-align:center;
             }
+
+
             hr{
-                width: 4%;
+                width: 10%;
                 margin-left: auto;
                 margin-right: auto;
-                border-top: 2px solid black;
+                border: 1px solid black;
                 background-color:black;
             }
+
+
             .services-table{
 
                 display:flex;
             }
 
+            .digital-marketing{
+                border: 1px solid black;
+            }
+
             .software-development{
 
-                border: 1px solid black;
+                border-left: 1px solid black;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                margin-left:10%;
+            }
+
+            .training{
+                border-right:1px solid black;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+
+            .digital-marketing,.software-development,.training{
+
+                width:400px;
+                height:200px;
+                text-align: left;
+                padding-left:20px;
+            }
+            h2{
+                color:rgb(14, 204, 14);
             }
 
         </style>
@@ -136,13 +170,13 @@
             </div>
 
             <div class="navbar">
-                <a href="">HOME</a>
-                <a href="">ABOUT</a>
-                <a href="">COURSES</a>
-                <a href="">SERVICES</a>
-                <a href="">TESTIMONIALS</a>
-                <a href="">GALLERY</a>
-                <a href="">CONTACT</a>
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">COURSES</a>
+                <a href="#">SERVICES</a>
+                <a href="#">TESTIMONIALS</a>
+                <a href="#">GALLERY</a>
+                <a href="#">CONTACT</a>
             </div>
         </header>
 
@@ -160,9 +194,12 @@
                 WEB DESIGNING, ROBOTIC PROCESS AUTOMATION, ISTQB CERTIFICATION, OCJP CERTIFICATION 
                 INDUSTRIAL TRAINING IN THANE, BORIVALI, MUMBAI AND NAVI MUMBAI.
 
-            </b></p><hr>
+            </b></p>
+
+            <hr>
+            
             <p>
-                Quastech Training & Business model reflects in-depth understanding of Software Industry & its need in the area of software 
+                <b>Quastech</b> Training & Business model reflects in-depth understanding of Software Industry & its need in the area of software 
                 & application development & testing.<br><br>
 
                 We have the specialized and certified faculty for each content like Software Testing, Java Development, Python Development, 
@@ -172,15 +209,40 @@
 
             <br>
             <h1>SERVICES WE OFFER</h1>
+
+
                 <div class="services-table">
                     <div class="software-development">
-                        <h2>Software Development</h2><br>
+                        <h2>Software Development</h2>
+
+                        <b>
                         WEBSITE DESIGNING <br>
                         CRM - ERP DEVELOPMENT <br>
                         SOFTWARE DEVELOPMENT <br>
+                        </b>
                         Static / Dynamic / Ecommerce
+                    </div>
 
 
+                    <div class="digital-marketing">
+                        <h2>Digital Marketing</h2>
+                        <b>
+                        SEO - SMM - SMO - SEM <br>
+                        BRAND VISIBILITY <br>
+                        SOCIAL MEDIA MARKETING <br>
+                        </b>
+
+                        Facebook - Twitter - Instagram - others  <br>
+                    </div>
+
+                    <div class="training">
+                        <h2>Training</h2>
+                        <b>
+                        RETAIL / COORPORATE TRAINING<br>
+                        PLACEMENTS<br>
+                        SEMINARS<br>
+                        </b>
+                        Testing - Development - Skills<br>
 
                     </div>
 
