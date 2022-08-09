@@ -1,0 +1,116 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('https://images.pexels.com/photos/2236713/pexels-photo-2236713.jpeg?cs=srgb&dl=pexels-nicole-avagliano-2236713.jpg&fm=jpg ');
+    background-size: cover;
+}
+
+textarea {
+    width: 600px;
+    height: 250px;
+    font-size: 20px;
+
+}
+
+label {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main {
+
+
+    margin-top: 50px;
+}
+
+.main h1 {
+
+    font-size: 50px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    margin-top: 150px;
+}
+
+.info {
+
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    margin-left: 70px;
+}
+
+.info h2 {
+    color: white;
+    font-size: 40px;
+}
+
+.info span {
+
+
+    font-size: 40px;
+    color: white;
+}
+
+
+.info span.yellow-underline {
+
+    border-bottom: 3px solid yellow;
+
+}
+
+
+
+.form {
+
+    padding-left: 50px;
+    width: 50%;
+    height: 100%;
+}
+
+#username,
+#email {
+
+    width: 80%;
+    height: 40px;
+}
+
+
+
+
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+
+    font-size: 22px;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+
+    font-size: 22px;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+
+    font-size: 22px;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+
+    font-size: 22px;
+}
+
+
+input[type=text],
+input[type=email],
+textarea {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
