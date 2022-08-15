@@ -1,14 +1,15 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'DynaPuff', cursive;
     background-image: url('https://images.pexels.com/photos/2236713/pexels-photo-2236713.jpeg?cs=srgb&dl=pexels-nicole-avagliano-2236713.jpg&fm=jpg ');
     background-size: cover;
+
+    color: grey;
 }
 
 textarea {
     width: 600px;
     height: 250px;
     font-size: 20px;
-
 }
 
 label {
@@ -18,16 +19,17 @@ label {
 }
 
 
-img{
+img {
 
-    transition:all 1s;
+    transition: all 1s;
 }
 
-img:hover{
+img:hover {
 
-    transform:scale(1.5);
+    transform: scale(1.5);
 
 }
+
 .main {
 
 
@@ -44,7 +46,8 @@ img:hover{
 
 .container {
     display: flex;
-    margin-top: 150px;
+    background: rgba(13, 110, 139, 0.3);
+    z-index: 2;
 }
 
 .info {

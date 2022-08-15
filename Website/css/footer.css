@@ -1,18 +1,13 @@
-
-
-.footer{
-
-    width: 100%;
-    height:500px;
-    background-color:rgb(26, 25, 25);
-    display:flex;
+footer {
+    background: #1A1E25;
+    color: #868c96;
 }
 
-.contact-details{
-
-    width: 50%;
+footer p {
+    padding: 40px 0;
+    text-align: center;
 }
-.socails{
 
-    width: 50%;
+footer img {
+    width: 44px;
 }
