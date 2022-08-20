@@ -1,74 +1,80 @@
-body{
+body {
 
-    background-color: rgb(28, 27, 27) ;
+    background-color: rgb(28, 27, 27);
+    font-family: 'Raleway', sans-serif;
+
+    color: rgb(208, 202, 202);
 }
 
-.container-first{
-    display:flex;
-    justify-content:center;
+.container-first {
+    display: flex;
+    justify-content: center;
 
-    margin-top:50px;
+    margin-top: 50px;
 }
 
-.yellow{
-    color:rgb(227, 198, 33);
+.yellow {
+    color: rgb(227, 198, 33);
 }
 
 
-.home-repair,.home-repair-img{
+.home-repair,
+.home-repair-img {
 
-    height:700px;
-    width:40%;
+    height: 700px;
+    width: 40%;
 }
 
-.home-repair{
+.home-repair {
 
 
-    color:rgb(208, 202, 202);
-    padding-top:100px;
-    
-    font-family:'Raleway', sans-serif; 
+    padding-top: 100px;
+
+
 }
 
-#homerepair{
-    font-size: 80px;  
+#homerepair {
+    font-size: 80px;
     font-weight: 900;
 }
 
-#renovating{
+#renovating {
 
-    color:rgb(208, 202, 202);
     font-size: 50px;
     font-weight: 500;
 }
 
-#more {display: none;}
-#myBtn{
+#more {
+    display: none;
+}
 
-    width:150px;
-    height:50px;
+#myBtn {
+
+    color: inherit;
+    width: 150px;
+    height: 50px;
     background-color: rgb(28, 27, 27);
     font-size: 20px;
-    color:rgb(208, 202, 202);
     border: 1px solid rgb(208, 202, 202);
+    font-family: inherit;
     transition: all 1s;
 }
 
-#myBtn:hover{
+#myBtn:hover {
 
-    color:rgb(28, 27, 27);
+    color: rgb(28, 27, 27);
     background-color: rgb(208, 202, 202);
 }
 
 
 
-.home-repair-img{
+.home-repair-img {
 
     position: relative;
-    padding-top:50px;
+    padding-top: 50px;
 }
 
-#toolbox{
+#toolbox {
     position: absolute;
     height: 400px;
     width: 400px;
@@ -76,9 +82,112 @@ body{
     top: 400px;
 }
 
-.container-second{
+.container-second {
 
     min-width: 100%;
-    min-height:500px;
-    border: 1px solid red;
+    min-height: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    background-color: rgb(227, 198, 33);
+}
+
+.container-second div {
+    width: 20%;
+    height: 300px;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: rgb(28, 27, 27);
+}
+
+.container-second h3 {
+    font-size: 25px;
+}
+
+
+.container-second img {
+
+    width: 100px;
+    height: 100px;
+    background-color: rgb(227, 198, 33);
+    border-radius: 60%;
+
+
+}
+
+.container-third {
+    text-align: center;
+}
+
+.container-third h1 {
+    color: white;
+    font-size: 100px;
+}
+
+.container-third p {
+
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 20px;
+}
+
+#more-container-third {
+
+    display: none;
+}
+
+#btn-container-third {
+
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-family: inherit;
+    background-color: rgb(227, 198, 33);
+    color: white;
+    transition: all 1s;
+}
+
+#btn-container-third:hover {
+
+    opacity: 0.7;
+}
+
+.container-fourth {
+
+    min-width: 100%;
+    min-height: 700px;
+    background-image: url(../img/yellow-tools.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+
+.container-fourth .help {
+
+    width: 30%;
+    min-height: 500px;
+    background-color: rgb(227, 198, 33);
+    margin-left: 100px;
+    color: white;
+    padding-top: 30px;
+    padding-left: 20px;
+    box-shadow: 1px 1px rgba(0, 0, 0, .5);
+    transition: all 1s;
+}
+
+.container-fourth .help .repair-service {
+
+    font-size: 30px;
+}
+
+.container-fourth h1 {
+
+    font-size: 80px;
+}
+
+
+.container-fourth .help:hover {
+    transform: scale(1.1);
 }

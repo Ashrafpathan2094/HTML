@@ -49,6 +49,7 @@
                 </script>
             </div>
 
+
             <div class="home-repair-img">
                 <img src="../img/home_repair.jpg" alt="homerepair" width="90%"
                     height="90%">
@@ -57,9 +58,112 @@
             </div>
         </div>
 
+        <br>
+
         <div class="container-second">
 
-            asasd
+            <div class="home-cleaning">
+                <center><img src="../img/broom-icon.png" alt=""></center><br>
+                <h3><span class="yellow"> HOME CLEANING</span></h3>
+                <p>
+                    Your home is more than just a building—its your sanctuary—a
+                    space where you can relax, unwind, and spend time doing the
+                    things you love.
+                </p>
+
+            </div>
+
+
+            <div class="interior-painting">
+                <center><img src="../img/painting-icon.png" alt=""></center><br>
+                <h3><span class="yellow"> INTERIOR PAINTING</span></h3>
+                <p>
+                    Painting the entire interior of a house can transform it
+                    from mundane to inspiring!
+                </p>
+
+            </div>
+
+
+            <div class="light-fixure">
+                <center><img src="../img/light-icon.png" alt=""></center><br>
+                <h3><span class="yellow"> LIGHT FIXURE</span></h3>
+                <p>
+                    Every editorial product is independently selected, though we
+                    may be compensated or receive an affiliate commission.
+                </p>
+
+            </div>
+
+
+            <div class="smart-home">
+                <center><img src="../img/smarthome-icon.png" alt=""></center><br>
+                <h3><span class="yellow"> SMART HOME </span></h3>
+                <p>
+                    A smart home refers to a convenient home setup where
+                    appliances and devices can be automatically controlled.
+                </p>
+            </div>
+        </div>
+
+        <br>
+        <div class="container-third">
+            <h1> About Us</h1>
+
+            <p>The layout and appearance of your home can truly shape your
+                day-to-day lifestyle. If it's time to give your property an
+                update, turn to the professionals at Home Repairs and
+                Remodeling, LLC <span id="dots-container-third">...</span><span
+                    id="more-container-third">. As an established home
+                    remodeling firm in Phoenix, AZ, our goal is to transform
+                    your home so that it meets your functional and aesthetic
+                    needs.Whether you're looking to update a single room in your
+                    home or desire more extensive renovations, our home
+                    remodeling contractors have the tools and skills necessary
+                    to complete your project on time and to your total
+                    satisfaction. To set up an on-site consultation, call us
+                    today.
+                </span>
+            </p> <br>
+            <center><button onclick="moreFunction()" id="btn-container-third">Read
+                    more</button></center>
+
+            <script>
+
+                function moreFunction(){
+
+                    var moreDots= document.getElementById("dots-container-third");
+                    var moreContent=document.getElementById("more-container-third");
+                    var btnContent=document.getElementById("btn-container-third");
+
+                    if (moreDots.style.display=="none"){
+                        moreDots.style.display = "inline";
+                        btnContent.innerHTML = "Read more"; 
+                        moreContent.style.display = "none";
+                    }else{
+
+                        moreDots.style.display = "none";
+                        btnContent.innerHTML = "Read less"; 
+                        moreContent.style.display = "inline";
+                    }
+                }   
+            </script>
+            <br><br>
+        </div>
+
+        <div class="container-fourth">
+
+
+            <div class="help">
+
+                <p class="repair-service">r&nbsp;&nbsp;e&nbsp;&nbsp;p&nbsp;&nbsp;a&nbsp;&nbsp;i&nbsp;&nbsp;r&nbsp;&nbsp;&nbsp;&nbsp;
+                    s&nbsp;&nbsp;e&nbsp;&nbsp;r&nbsp;&nbsp;v&nbsp;&nbsp;i&nbsp;&nbsp;c&nbsp;&nbsp;e&nbsp;&nbsp;s&nbsp;&nbsp;
+                </p>
+
+                <h1>HOW CAN WE HELP YOU?</h1>
+            </div>
+
+
         </div>
     </body>
 </html>
