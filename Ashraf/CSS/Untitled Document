@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+
+<html>
+
+    <head>
+        <title>Fonts</title>
+        <style> 
+
+            .a{
+                background-color:yellow;
+                color:blue;
+    }                           
+        </style>
+    </head>
+    <body>
+
+ <div class="a"> This Div Contains a Very Long Word:
+thisisaveryveryveryveryveryveryveryveryverylongword. This long word will not break and wrap to the next line This Div Contains a Very Long Word:
+thisisaveryveryveryveryveryveryveryveryverylongword. This long word will not break and wrap to the next line This Div Contains a Very Long Word:
+thisisaveryveryveryveryveryveryveryveryverylongword. This long word will not break and wrap to the next line This Div Contains a Very Long Word:
+thisisaveryveryveryveryveryveryveryveryverylongword. This long word will not break and wrap to the next line</div>
+    </body>
+<html>

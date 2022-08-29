@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <center><canvas id ="my" width="300" height="400" style="border: 3px solid black;"><canvas></center>
+
+        <script>
+                a=document.getElementById("my");
+                b = a.getContext("2d");
+                b.fillStyle="red";
+                b.fillRect(125,150,50,100);
+                b.strokeStyle="green";
+
+                b.moveTo(0,0);
+                b.lineTo(300,400);
+                b.moveTo(300,0);
+                b.lineTo(0,400);
+                b.lineWidth="3";
+                b.stroke();
+                
+                b.beginPath();
+                b.arc(150,75,10,0.,2*Math.PI);
+                b.fill();
+                b.closePath();
+
+                
+                b.beginPath();
+                b.arc(70,200,10,0.,2*Math.PI);
+                b.fill();
+                b.closePath();
+
+                
+                b.beginPath();
+                b.arc(230,200,10,0.,2*Math.PI);
+                b.fill();
+                b.closePath();  
+
+                
+                b.beginPath();
+                b.arc(150,320,10,0.,2*Math.PI);
+                b.fill();
+                b.closePath();
+        
+                b.font="20px Arial";
+                b.strokeStyle="black";
+                b.lineWidth=1;
+
+                b.strokeText("Hello World!",180,180);
+
+                b.font="10px Arial";
+                b.fillText("Hello World!",50,180);
+        </script>
+    </body>
+</html>
+
+

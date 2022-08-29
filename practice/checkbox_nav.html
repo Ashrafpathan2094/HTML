@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+
+            .container{
+
+                position: relative;
+                background-color: blue;
+                width: 100%;
+                height:700px;
+            }
+
+            .check-box{
+
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                z-index: 2;
+            }
+            .toggler{
+
+                width:100%;
+                height:100%;
+                cursor: pointer;
+                z-index: 1;
+            }
+
+
+            .navbar{
+
+                position: absolute;
+
+                top:100px;
+                left: 100px;
+            }
+
+            .toggler:checked .check-box{
+
+                background-color: pink;
+            }
+
+
+
+    </style>
+        <title>Nav</title>
+    </head>
+    <body>
+
+
+        <div class="container">
+
+            <div class="check-box">
+                <input type="checkbox" name="asd" class="toggler">
+            </div>
+
+            <div class="navbar">
+
+                <ol>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ol>
+        
+
+
+            </div>
+
+
+        </div>
+
+    </body>
+</html>
